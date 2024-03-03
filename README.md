@@ -1,5 +1,17 @@
 
 # CS253_Car_Rental_System
+##Instructions to Run
+- ⁠Save the files in a directory, say ⁠ x ⁠.
+- ⁠Open your terminal and go to directory ⁠ x ⁠.
+- Type the following commands in the terminal:
+  
+  
+⁠   g++ solution.cpp -o runner.exe
+  ./runner.exe
+   ⁠
+- The code will now run
+- Make sure all csv files are in x as well, and are named as in repository
+
 ## Overview 
 - This software allows three types of users to log in: Manager, Customer and Employee.
 - The Manager is unique and has credentials (ID,Pwd,Name)=("M001","1234","John")
@@ -51,10 +63,17 @@
 - Return_Car()
 
 ## Assumptions
+##### Manager Privileges
+- Manager can only update/delete cars that are not currently rented out.
+- Manager can only delete Customers/Employees that do not currently own cars and have cleared their fines.
+- Only the manager can create users, and clear fines.
+- Manager cannot alter IDs of different users.
+- Manager can change passwords.
 ##### Customer_Record: 
 - Customer_Record is a column in CUSTOMERS.csv that stores a number between 0 and 100, indicating the defaulting rate of that customer(therefore a score of 0 indicates a very reliable customer, whereas a score of 100 indicates a customer who constantly defaults).
 - Similarly for EMPLOYEES.csv
 - The formula is: Customer Record= 0.3 * Current Value + 0.3* Days Late * 3.33 + 0.4 (Damage%)
+- New user holds average record of 50.
 ##### Fines:
 - The Car Rental System Charges a fixed rate as long as car is returned on the same date, any extra days attract a fine of Rs 10,000 per day
 - 1% damage attracts a fine of Rs 100 
