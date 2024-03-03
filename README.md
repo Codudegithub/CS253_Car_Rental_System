@@ -78,14 +78,14 @@
 - Any record inserted into "CARS.csv" must be available for rent(i.e, the manager cannot insert a car that is rented out already)
 
 ##### String to integer conversions
--Truncates out initial digits before occurence of non digit
 - The code uses a custom function stointeger that assumes input of 0 whenever the user inputs a non digit character in fields that are required to be converted to integers.
+- It also filters out initial digits before occurence of non digit(non digits include decimal points) to store an integer value.
 
 
 
 ## Guide to Using the Software
-- All csv files may be opened using excel by setting delimiters as comma(,) and pipe(|).
+- All csv files may be opened using excel by setting delimiters as both comma(,) and pipe(|).
 - To Log In as manager, use credentials ("M001",1234). Manager's name is John.
-- For credentials of Customer and Employee, you can open the respective csv files.
+- For credentials of Customer and Employee, you can open their respective csv files.
 
 
