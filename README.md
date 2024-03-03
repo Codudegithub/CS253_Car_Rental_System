@@ -78,6 +78,7 @@
 - Any record inserted into "CARS.csv" must be available for rent(i.e, the manager cannot insert a car that is rented out already)
 
 ##### String to integer conversions
+-Truncates out initial digits before occurence of non digit
 - The code uses a custom function stointeger that assumes input of 0 whenever the user inputs a non digit character in fields that are required to be converted to integers.
 
 
