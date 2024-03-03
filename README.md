@@ -48,7 +48,7 @@
 ### Child Class#3 : Employee (public access inheritance)
 ##### Public Functions
 - Constructor
-- Return_Car
+- Return_Car()
 
 ## Assumptions
 ##### Customer_Record: 
